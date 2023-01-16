@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>Face Recognition App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+   <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  </head>
+
+  <body style="background-color:rgb(255, 192, 255);">
+  <div class="container">
+    
+    <center>
+    <button class="btn btn-default" style="font-size: 30px">Face Recognition App</button>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <br>
+      <i style="color:rgb(108, 7, 241)">Father
+      <hr>
+      Mother 
+      <hr>
+      Sister
+      <hr>
+      Me  
+      <hr>
+      Uncle
+      <hr>
+      </i>
+      <br><br>
+      <br><br>
+      <label>Webcam View:</label>
+      <br><br>
+      <div id="webcam" ></div>
+      <br>
+      <div id="picture"></div>
+      <br><br>
+      <button class="btn btn-success" onclick="take_snapshot()">Capture Image</button>
+      <br><br>
+      <button class="btn btn-primary" onclick="check()">Identify Image</button>
+      <br><br>
+      <p style="font-size: 22px;">Object :  </p>
+      <p style="font-size: 22px;">Accuracy :  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
